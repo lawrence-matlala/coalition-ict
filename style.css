@@ -544,3 +544,69 @@ footer * {
   }
 }
 /*End of small screen*/
+
+/* What We Offer Section */
+.offers-section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.offers-heading h2 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.offers-heading p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.offers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card i {
+  font-size: 38px;
+  color: #84cc16;
+  margin-bottom: 18px;
+}
+
+.offer-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.offer-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+  .offers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-section {
+    padding: 50px 6%;
+  }
+}
