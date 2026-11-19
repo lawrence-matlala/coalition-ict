@@ -393,7 +393,26 @@ footer * {
 /* Mobile phones */
 @media (max-width: 480px) {
   .home-banner {
-    height: 200px;
+    height: 350px;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .banner-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .banner-buttons .btn {
+    padding: 9px 16px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 /* End of the home banner*/
@@ -442,8 +461,21 @@ footer * {
 
 .banner-content p {
   font-size: 18px;
-  margin-bottom: 25px;
-  line-height: 1.6;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: nowrap;
+}
+
+.banner-buttons .btn {
+  padding: 9px 16px;
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 @keyframes fadeInUp {
