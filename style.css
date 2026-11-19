@@ -507,3 +507,40 @@ footer * {
   }
 }
 /*End of animated text on the banner*/
+
+/*Code for buttons to show on small screens*/
+@media (max-width: 480px) {
+  .home-banner {
+    height: 350px;
+  }
+
+  .banner-content {
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+  }
+
+  .banner-content h1 {
+    font-size: 20px;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .banner-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .banner-buttons .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}
+/*End of small screen*/
