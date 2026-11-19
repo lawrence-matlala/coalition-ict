@@ -363,3 +363,115 @@ footer * {
   display: block;
 }
 /*End of the code*/
+
+/*Home banner*/
+.home-banner {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.home-banner {
+  position: relative;
+}
+
+.home-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .home-banner {
+    height: 300px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .home-banner {
+    height: 200px;
+  }
+}
+/* End of the home banner*/
+
+/* buttons on the banner*/
+.banner-buttons {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.banner-buttons .btn {
+  padding: 12px 30px;
+  background: #84cc16;
+  color: #df0f0f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.banner-buttons .btn:hover {
+  background: #111;
+  color: white;
+}
+/*End of button*/
+
+/*Animated text ontop of the banner*/
+.banner-content {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  max-width: 600px;
+  color: white;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.banner-content h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .banner-content {
+    top: 25%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+}
+/*End of animated text on the banner*/
